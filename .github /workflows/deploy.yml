@@ -32,8 +32,8 @@ jobs:
         uses: azure/aks-set-context@v1
         with:
           creds: ${{ secrets.AZURE_CREDENTIALS }}
-          resourceGroup: <your-resource-group-name>
-          clusterName: <your-aks-cluster-name>
+          resourceGroup: gitakstest
+          clusterName: gitakstestcluster
 
       - name: Apply Kubernetes deployment
         uses: azure/k8s-deploy@v1
