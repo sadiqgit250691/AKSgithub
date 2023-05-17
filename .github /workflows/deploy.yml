@@ -39,7 +39,7 @@ jobs:
         uses: azure/k8s-deploy@v1
         with:
           manifests: |
-            kubernetes/deployment.yaml
+            kubernetes/*.yaml
           images: |
             ${{ secrets.ACR_REGISTRY_NAME }}.azurecr.io/mydemoapp:${{ github.sha }}
 
