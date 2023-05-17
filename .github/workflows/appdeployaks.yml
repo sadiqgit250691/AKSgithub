@@ -40,5 +40,6 @@ jobs:
         with:
           manifests: |
             kubernetes/pyflask.yaml
+            kubernetes/redis.yaml
           images: |
             ${{ secrets.ACR_REGISTRY_NAME }}.azurecr.io/mydemoapp:${{ github.sha }}
